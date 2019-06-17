@@ -28,6 +28,6 @@ Level up and **earn bonus points** via the following _optional_ stretch challeng
 
 | Skill              | Level-Up Opportunity                                                               | BONUS | Done |
 | ------------------ | ---------------------------------------------------------------------------------- | :---: | :---:|
-| **🎉Portfolio +1** | Add your project to your Make School portfolio, linked in your project's `README`. | `10`  | :---:|
-| **🔌Integrations** | Find a clever way to utilize a third-party API within your project.                | `20`  | :---:|
-| **📈DevOps**       | Already a Heroku Master? Deploy on any virtual private server (DigitalOcean, AWS)  | `30`  | :---:|
+| **🎉Portfolio +1** | Add your project to your Make School portfolio, linked in your project's `README`. | `10`  |      |
+| **🔌Integrations** | Find a clever way to utilize a third-party API within your project.                | `20`  |      |
+| **📈DevOps**       | Already a Heroku Master? Deploy on any virtual private server (DigitalOcean, AWS)  | `30`  |      |
