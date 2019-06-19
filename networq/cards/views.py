@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def cards(request):
+    """
+    This page will render the cards template. 
+    """
+    return HttpResponse("This is where you will see cards.")
