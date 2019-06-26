@@ -6,8 +6,11 @@ def index(request):
     """
     return HttpResponse("This is the root.")
 
-def users(request):
+def users(request, user_id):
     """
     This page will render user feed template. 
     """
-    return HttpResponse("This is the user's profile page.")
+    user = get_object_or_404(User, pk=user_id)
+    return render(request, 'users/profile.html', {
+        'user': user
+    })
