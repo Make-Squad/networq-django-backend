@@ -8,6 +8,5 @@ urlpatterns = [
     
     # user's dashboard/profile page 
     url('users/', views.users, name='users'),
-
     url(r'', views.index, name='index')
     ]
