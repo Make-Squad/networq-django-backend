@@ -1,0 +1,4 @@
+{% for user in users %}
+    <a href="/users/{{ user.username }}">Click here to see {{ user.username }}'s profile.</a>
+    <br>
+{% endfor %}
