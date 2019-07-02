@@ -1,4 +1,11 @@
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
+
+from .models import User
+from .serializers import UserSerializer
 
 def index(request):
     """
@@ -8,11 +15,14 @@ def index(request):
     """
     return HttpResponse("This is the root.")
 
-def user(request, username):
-    """
-    This page will render user feed template. 
-    """
-    user = get_object_or_404(User, username=username)
-    return render(request, 'users/profile.html', {
-        'user': user
-    })
+class UserList(APIView):
+    def get(self, request):
+        users = User.objects.all()[:20]
+        data = UserSerializer(users, many=True).data
+        return Response(data)
+
+class UserDetail(APIView):
+    def get(self, request, pk):
+        user = get_object_or_404(User, pk=pk)
+        data = UserSerializer(user).data
+        return Response(data)

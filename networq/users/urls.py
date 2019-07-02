@@ -5,9 +5,13 @@ from . import views
 
 urlpatterns = [
     # /users/settings - edit user settings 
+
+    # SHOW all users
+    url('users', views.UserList.as_view(), name='users_list'),
+
+    # SHOW one user's dashboard/profile page 
+    url('user/<username>', views.UserDetail.as_view(), name='user_detail'),
     
-    # user's dashboard/profile page 
-    url('user/<username>', views.user, name='user'),
-    # path('<int:question_id>/vote/', views.user, name='vote'),
+    # root 
     url(r'', views.index, name='index')
     ]
