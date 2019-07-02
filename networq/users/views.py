@@ -11,6 +11,15 @@ def index(request):
     """
     return render(request, 'users/index.html')
 
+def user(request, username):
+    """
+    This page will render user feed template. 
+    """
+    user = get_object_or_404(User, username=username)
+    return render(request, 'users/profile.html', {
+        'user': user
+    })
+
 def users(request):
     """
     This page will render all users.
@@ -20,11 +29,3 @@ def users(request):
         'users': active_users
     })
 
-def user(request, username):
-    """
-    This page will render user feed template. 
-    """
-    user = get_object_or_404(User, username=username)
-    return render(request, 'users/profile.html', {
-        'user': user
-    })
