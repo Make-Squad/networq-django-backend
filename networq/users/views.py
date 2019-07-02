@@ -1,11 +1,7 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, get_list_or_404, render
 
 from .models import User
-from .serializers import UserSerializer
 
 def index(request):
     """
@@ -13,16 +9,22 @@ def index(request):
 
     For now, lets render all cards and all users here. 
     """
-    return HttpResponse("This is the root.")
+    return render(request, 'users/index.html')
 
-class UserList(APIView):
-    def get(self, request):
-        users = User.objects.all()[:20]
-        data = UserSerializer(users, many=True).data
-        return Response(data)
+def users(request):
+    """
+    This page will render all users.
+    """
+    active_users = get_list_or_404(User, is_active=True)
+    return render(request, 'users/users.html', {
+        'users': active_users
+    })
 
-class UserDetail(APIView):
-    def get(self, request, pk):
-        user = get_object_or_404(User, pk=pk)
-        data = UserSerializer(user).data
-        return Response(data)
+def user(request, username):
+    """
+    This page will render user feed template. 
+    """
+    user = get_object_or_404(User, username=username)
+    return render(request, 'users/profile.html', {
+        'user': user
+    })
