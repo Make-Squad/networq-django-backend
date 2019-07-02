@@ -3,17 +3,11 @@ from django.core.validators import RegexValidator, EmailValidator
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import ugettext_lazy as _
 
-from .managers import CustomUserManager
-
-# Create your models here.
 class User(AbstractUser):
-    username = None
+    # use the username for now
     email = models.EmailField(_('email address'), unique=True)
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
-
-    objects = CustomUserManager()
+    REQUIRED_FIELDS = ['passsword', 'email', 'first_name', 'last_name']
 
     city = models.CharField(max_length=50)
 
