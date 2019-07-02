@@ -5,5 +5,5 @@ from . import views
 
 urlpatterns = [
     # cards index page; aka user's feed
-    url('cards/', views.cards, name='cards')
+    url('cards', views.cards, name='cards')
     ]
