@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
     'users',
-    'cards.apps.CardsConfig'
+    'cards.apps.CardsConfig',
+
+    'rest_framework',
 ]
 
 AUTH_USER_MODEL = 'users.User'

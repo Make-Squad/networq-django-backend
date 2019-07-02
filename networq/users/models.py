@@ -5,9 +5,10 @@ from django.utils.translation import ugettext_lazy as _
 
 class User(AbstractUser):
     # use the username for now
+    username = models.CharField(max_length=50, verbose_name='username', unique=True, default='user')
     email = models.EmailField(_('email address'), unique=True)
 
-    REQUIRED_FIELDS = ['passsword', 'email', 'first_name', 'last_name']
+    REQUIRED_FIELDS = ['password', 'email', 'first_name', 'last_name']
 
     city = models.CharField(max_length=50)
 
@@ -21,4 +22,4 @@ class User(AbstractUser):
     date_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.email
+        return self.username
