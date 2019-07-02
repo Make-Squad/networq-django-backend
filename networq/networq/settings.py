@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     'users',
     'cards.apps.CardsConfig',
+    'api.apps.ApiConfig',
 
     'rest_framework',
 ]
