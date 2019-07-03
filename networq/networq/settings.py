@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # 'social_django',
     # 'social.apps.django_app.default',
     
-    'users.apps.UsersConfig',
+    # 'users',
     'cards.apps.CardsConfig',
     'api.apps.ApiConfig',
 
