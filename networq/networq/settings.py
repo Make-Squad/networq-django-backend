@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # 'social_django',
     # 'social.apps.django_app.default',
     
-    '../users',
+    'users',
     'cards.apps.CardsConfig',
     'api.apps.ApiConfig',
 
@@ -74,7 +74,7 @@ TEMPLATES = [
                 'django.core.context_processors.i18n',
                 'django.core.context_processors.media',
                 'django.core.context_processors.static',
-                'django.core.context_processors.tz'
+                'django.core.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
                 'social.apps.django_app.context_processors.backends',
                 'social.apps.django_app.context_processors.login_redirect',
