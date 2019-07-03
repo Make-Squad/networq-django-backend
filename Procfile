@@ -1,1 +1,1 @@
-web: gunicorn networq.wsgi
+web: gunicorn networq.wsgi --log-file -
