@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-APPEND_SLASH = True
+# APPEND_SLASH = True
 
 try: 
     import django_heroku
