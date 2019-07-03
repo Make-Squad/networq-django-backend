@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-Django==2.2.2
-djangorestframework==3.9.4
-dj-database-url==0.5.0
-django-heroku==0.3.1
-gunicorn==19.9.0
-psycopg2==2.8.3
-pytz==2019.1
-sqlparse==0.3.0
-whitenoise==4.1.2
-=======
 astroid==2.2.5
 certifi==2019.6.16
 chardet==3.0.4
@@ -37,4 +26,3 @@ sqlparse==0.3.0
 typed-ast==1.4.0
 urllib3==1.25.3
 wrapt==1.11.2
->>>>>>> 8237efd4df732231365a75c3e69387e187ef2963
