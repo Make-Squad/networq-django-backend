@@ -1,9 +1,7 @@
-Favicon here or title image
+🤝
 
 # networq 
-
-Directory here
-* [Networq v0 Live](http://networq.herokuapp.com/)
+Check it out: [Networq v0 Live](http://networq.herokuapp.com/)
 
 ## Getting Started 
 To install this project: 
