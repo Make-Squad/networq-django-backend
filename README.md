@@ -9,9 +9,9 @@
 To install this project:
 
 - clone this repository
-- activate your virtual environment
-- pip install the requirements (you might need to comment out django-heroku if you're using a Mac)
-- run the server by typing in python manage.py runserver
+- activate your virtual environment (virtualenv using Python3)
+- install the requirements by running `pip install -r requirements.txt` from the root folder (you might need to comment out `django-heroku` if you're using a Mac)
+- run the server by running `python manage.py runserver`
 
 ## Current Build
 
@@ -42,7 +42,7 @@ root/ (networq)
 
 ## Testing 📝
 
-Testing is done using django's testing framework. To run our tests, please 
+Testing is done using Django Test Framework. To run our tests, please run `./manage.py test` from the root folder.
 
 ## Endpoints
 
