@@ -2,17 +2,18 @@
 
 # 🤝 networq 
 Check it out: [Networq v0 Live](http://networq.herokuapp.com/)
+The live version of this product is hosted on Heroku. 
 
 ## Getting Started 
 To install this project: 
+
 - clone this repository
 - activate your virtual environment
 - pip install the requirements (you might need to comment our django-heroku)
 - run the server by typing in python manage.py runserver
 
 ## Current Build
-This project is built with Django 2.2.2. All versions for our requirements are listed in requirements.txt. 
-
+This project is built with Django 2.2.2. All versions for our dependancies are listed in requirements.txt. 
 
 ## File Structure 🗂
 
@@ -22,8 +23,14 @@ root/ (networq)
 |
 |-- cards/
 |-- users/
-|-- api/             
-
+|-- api/   
+|          
+|-- README.md
+|-- proposal.md (project proposal)
+|-- .gitignore
+|-- Procfile
+|-- requirements.txt
+|-- manage.py
 ```
 
 ## Testing 📝
