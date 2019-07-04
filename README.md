@@ -1,6 +1,6 @@
-🤝
 
-# networq 
+
+# 🤝 networq 
 Check it out: [Networq v0 Live](http://networq.herokuapp.com/)
 
 ## Getting Started 
@@ -30,11 +30,22 @@ root/ (networq)
 Testing is done using django's testing framework. To run our tests, please 
 
 ## Endpoints
+/users - view a list of all users
+/users/username - view a single user by username
 
-...
+/cards - view a list of all cards
+/cards/card_id - view a single card by id
+
+/api/users - DJANGO REST framework api list view of all users
+/api/users/username - DJANGO REST framework api detail view of one user (WIP)
+/api/cards - DJANGO REST framework api list view of all cards
+/api/cards/card_id - DJANGO REST framework api detail view of one user 
 
 ## Additional Contact Info ☎
 
-For questions related to networq ...
+For questions related to networq please email Faith Chikwekwe at faithchikwekwe01@gmail.com. 
 
 ## Contributors
+
+[Stephanie Cherubin](http://github.com/stephanieCherubin/)
+[Faith Chikwekwe](http://github.com/fchikwekwe/)
