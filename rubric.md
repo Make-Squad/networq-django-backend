@@ -18,7 +18,7 @@ _**NOTE**: Must score higher than a **`70%`** to pass._
 | `README` with documentation                |   `10`    |   `00`   |  :white_check_mark:        |
 | Public GitHub repo                         |    `5`    |   `00`   |     :white_check_mark:     |
 | No exposed secrets                         |    `5`    |   `00`   |      :white_check_mark:    |
-| **TOTAL**                                  | **`275`** | **`00`** |      55    |
+| **TOTAL**                                  | **`275`** | **`00`** |      215    |
 
 ## ✨ Finishing Touches
 
