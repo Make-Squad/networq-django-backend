@@ -23,8 +23,9 @@ This projects currently consists of three apps: cards, users and api.
 
 ```
 root/ (networq)
+|
 |-- networq/
-|---- setting.py
+|---- settings.py
 |
 |-- cards/
 |-- users/
