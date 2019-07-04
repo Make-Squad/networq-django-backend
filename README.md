@@ -1,8 +1,8 @@
 
 # 🤝 networq
 
-Check it out: [Networq v0 Live](http://networq.herokuapp.com/)
-The live version of this product is hosted on Heroku.
+- Check it out: [Networq v0 Live](http://networq.herokuapp.com/)
+- The live version of this product is hosted on Heroku.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ To install this project:
 
 - clone this repository
 - activate your virtual environment
-- pip install the requirements (you might need to comment our django-heroku)
+- pip install the requirements (you might need to comment out django-heroku if you're using a Mac)
 - run the server by typing in python manage.py runserver
 
 ## Current Build
