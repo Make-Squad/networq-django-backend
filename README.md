@@ -8,14 +8,14 @@
 
 To install this project:
 
-- clone this repository
-- activate your virtual environment (virtualenv using Python3)
+- clone this repository (run `git clone https://github.com/Make-Squad/networq-django-backend.git networq`)
+- create and activate your virtual environment (run `virtualenv -p python3 venv && source venv/bin/activate` from the root folder)
 - install the requirements by running `pip install -r requirements.txt` from the root folder (you might need to comment out `django-heroku` if you're using a Mac)
 - run the server by running `python manage.py runserver`
 
 ## Current Build
 
-This project is built with Django 2.2.2. All versions for our dependancies are listed in requirements.txt.
+This project is built with Django 2.2.2. All versions for our dependancies are listed in requirements.txt. To install dependencies, run `pip install -r requirements.txt` from the root folder.
 
 ## File Structure 🗂
 
