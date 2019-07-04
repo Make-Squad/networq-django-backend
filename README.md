@@ -3,40 +3,33 @@ Favicon here or title image
 # networq 
 
 Directory here
-* [Name](link here)
-
-
-## What is networq?
+* [Networq v0 Live](http://networq.herokuapp.com/)
 
 ## Getting Started 
-...
+To install this project: 
+- clone this repository
+- activate your virtual environment
+- pip install the requirements (you might need to comment our django-heroku)
+- run the server by typing in python manage.py runserver
 
 ## Current Build
-...
+This project is built with Django 2.2.2. All versions for our requirements are listed in requirements.txt. 
 
-### Landing Page
-Image here
-
-### React App
-Image here
 
 ## File Structure 🗂
+
+This projects currently consists of three apps: cards, users and api. 
 ```
-root/
+root/ (networq)
 |
-|-- server.go               
-|-- utils.go              
+|-- cards/
+|-- users/
+|-- api/             
 
-to be updated...
 ```
-
-## API Integration - What APIs are we using? 💻 📡
-
-... [if applicable]
 
 ## Testing 📝
-
-...
+Testing is done using django's testing framework. To run our tests, please 
 
 ## Endpoints
 
