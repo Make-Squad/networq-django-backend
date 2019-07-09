@@ -6,7 +6,7 @@ from django.shortcuts import get_object_or_404
 
 from users.models import User
 from cards.models import Card
-from .serializers import UserSerializer , CardSerializer
+from .serializers import UserSerializer, CardSerializer
 
 class UserList(APIView):
     def get(self, request):
