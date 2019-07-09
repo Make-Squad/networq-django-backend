@@ -7,7 +7,7 @@ urlpatterns = [
     # /users/settings - edit user settings 
 
     # SHOW one user's dashboard/profile page 
-    path('users/<username>', views.user, name='user'),
+    path('users/<username>', views.user, name='user_dashboard'),
     
     # SHOW all users
     url('users', views.users, name='users'),
