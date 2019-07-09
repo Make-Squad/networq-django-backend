@@ -6,16 +6,16 @@ from . import views
 urlpatterns = [
     # /users/settings - edit user settings 
 
-    # SHOW all users
+    # SHOW all users as ListView 
     url('users', views.UserList.as_view(), name='users_list'),
 
-    # SHOW one user's dashboard/profile page 
+    # SHOW one user as DetailView
     path('users/<username>', views.UserDetail.as_view(), name='user_detail'),
     
-    # # SHOW all cards
+    # # SHOW all cards as ListView
     url('cards', views.CardList.as_view(), name='cards_list'),
 
-    # SHOW one card's dashboard/profile page 
-    url('cards/<card_id>', views.CardDetail.as_view(), name='card_detail'),
+    # SHOW one card as DetailView
+    url('cards/<int:card_id>', views.CardDetail.as_view(), name='card_detail'),
     
     ]
