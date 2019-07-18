@@ -1,5 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, get_list_or_404, render
+from django.urls import reverse_lazy 
+# from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth import authenticate, login
+
 
 from .models import User
 
@@ -29,3 +33,24 @@ def users(request):
         'users': active_users
     })
 
+def my_view(request):
+    username = request.POST['username']
+    password = request.POST['password']
+
+    user = authenticate(request, username=username, password=password)
+
+    if user is not None: 
+        # redirect to user dashboard
+        return
+
+# class UserCreate(CreateView):
+#     model = User
+#     fields = '__all__'
+
+# class UserUpdate(UpdateView):
+#     model = User
+#     fields = '__all__'
+
+# class UserDelete(DeleteView):
+#     model = User
+#     success_url = reverse_lazy('user_dashboard')

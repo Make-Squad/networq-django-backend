@@ -1,5 +1,4 @@
 """networq URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
 Examples:
@@ -21,5 +20,5 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('cards/', include('cards.urls')),
     path('admin/', admin.site.urls),
-    path('', include('users.urls')),   
+    path('', include('users.urls')),
 ]
